@@ -14,6 +14,9 @@ if (isset($_POST['submit'])) {
     
 
   $amount = $_POST['amount'];
+
+  $phonenumber = $_POST['phonenumber'];
+  $tel= ltrim($phonenumber, 0) ;
   //* Prepare our mobile money request
   
 
@@ -45,7 +48,7 @@ try {
     //print_r("Payment successful \n");    
     //print_r($arr);
     //print_r($credentials);
-    echo "<script>window.location='verifypayment.php?credentials=$credentials'</script>"; 
+    echo "<script>window.location='verifypayment.php?credentials=$credentials&amount=$amount&tel=$tel'</script>"; 
 
     
 
