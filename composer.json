@@ -1,0 +1,18 @@
+{
+    "name": "testimonytechnologies/airtelmoneypay",
+    "description": "payment platform",
+    "type": "project",
+    "authors": [{
+        "name": "Mutebi David",
+        "email": "mdavid.trevor@gmail.com"
+    }],
+    "require": {
+        "stripe/stripe-php": "^7.87",
+        "guzzlehttp/guzzle": "^7.3",
+        "phpfastcache/phpfastcache": "^8.0"
+    },
+    "config": {
+
+        "platform-check": false
+    }
+}
